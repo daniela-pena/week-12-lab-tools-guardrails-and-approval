@@ -1,7 +1,8 @@
 # Mini-Project Info
 # Author: Daniela Pena
 
-# 1. What the assistant does: This assistant is an appointment helper and helps book appointments.
-# 2. What is mock about it: Its replies come from keyboard rules (not an AI model), and its order data is a small dictionary typed into the file, not a company's appointment system.
+# 1. What the assistant does: This assistant is an appointment helper and helps book appointments. It uses Ollama as its AI model to understand customer messages and decide when to use available tools.
+# 2. What is mock about it: The appointment information is stored in a small Python dictionary instead of a real company's appointment system. Ollama provides the AI responses, but the appointment data and tools are simulated for this project.
 # 3. Which requests go to a person and why: Instances where clients want to book, cancel, or reschedule an appointment because the bot isn't able to do these functions itself (and this can be room for error).
-# 4. One thing that could go wrong if it used real customer data: It could be slow or unavailable or unreliable, which could cause issues (i.e. double booking an appointment). Use with caution. 
+# 4. One thing that could go wrong if it used real customer data: It could be slow or unavailable or unreliable, which could cause issues (i.e. double booking an appointment). Customer information could also be exposed if it were not properly protected. The system would need security measures, testing, and human oversight before being used with real customers. Use with caution. 
+# 5. One successful request was checking appointment information using the assistant's available tools. One request the Toolbox refused was a request involving information or an action the assistant was not authorized to access. I added instructions to make the assistant provide short, clear responses and send requests requiring human attention for review. These instructions help prevent unauthorized appointment changes and improve the customer experience.
